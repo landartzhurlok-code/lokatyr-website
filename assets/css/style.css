@@ -1,0 +1,1657 @@
+/* ===========================================================
+   MARHARYTA ZHURUNOVA
+   PART 1
+   RESET / TYPOGRAPHY / HEADER / INTRO
+=========================================================== */
+
+
+/* ================= VARIABLES ================= */
+
+:root{
+
+    --bg:#F7F2EC;
+
+    --surface:#F1EAE3;
+
+    --text:#7B5542;
+
+    --text-light:#9A7561;
+
+    --line:rgba(123,85,66,.12);
+
+    --container:860px;
+
+    --text-width:560px;
+
+    --transition:.25s ease;
+
+}
+
+
+
+/* ================= RESET ================= */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:13px;
+
+    font-weight:400;
+
+    line-height:1.95;
+
+    -webkit-font-smoothing:antialiased;
+
+    text-rendering:optimizeLegibility;
+
+}
+
+img{
+
+    display:block;
+
+    width:100%;
+
+}
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+a:hover{
+
+    opacity:.75;
+
+}
+
+::selection{
+
+    background:#c6ab98;
+
+    color:white;
+
+}
+
+
+
+/* ================= LAYOUT ================= */
+
+.container{
+
+    width:min(92%,var(--container));
+
+    margin:auto;
+
+}
+
+.narrow{
+
+    max-width:var(--text-width);
+
+}
+
+
+
+/* ================= TYPOGRAPHY ================= */
+
+h1,
+
+h2,
+
+h3,
+
+h4{
+
+    font-family:"Manrope",sans-serif;
+
+    font-weight:500;
+
+    color:var(--text);
+
+}
+
+h1{
+
+    font-size:28px;
+
+    line-height:1.25;
+
+    letter-spacing:-.02em;
+
+    margin-bottom:32px;
+
+}
+
+h2{
+
+    font-size:17px;
+
+    font-weight:500;
+
+    letter-spacing:.04em;
+
+    text-transform:uppercase;
+
+    margin-bottom:26px;
+
+}
+
+h3{
+
+    font-size:14px;
+
+    font-weight:500;
+
+    margin-bottom:10px;
+
+}
+
+p{
+
+    color:var(--text-light);
+
+    margin-bottom:18px;
+
+    max-width:560px;
+
+}
+
+
+
+/* ================= HEADER ================= */
+
+.site-header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+    background:rgba(247,242,236,.95);
+
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid var(--line);
+
+}
+
+.header-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:72px;
+
+}
+
+.logo{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    font-size:13px;
+
+    font-weight:500;
+
+    line-height:1.2;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    color:var(--text);
+
+}
+
+.navigation{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+.navigation a{
+
+    position:relative;
+
+    font-size:13px;
+
+    color:var(--text);
+
+}
+
+.navigation a.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:100%;
+
+    height:1px;
+
+    background:var(--text);
+
+}
+
+
+
+/* ================= INTRO ================= */
+
+.hero{
+
+    padding:90px 0 80px;
+
+}
+
+.hero-content{
+
+    max-width:560px;
+
+}
+
+.hero-content h1{
+
+    margin-bottom:36px;
+
+}
+
+.hero-content p{
+
+    max-width:520px;
+
+}
+
+
+
+/* ================= SECTION TITLE ================= */
+
+.section-title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+    border-bottom:1px solid var(--line);
+
+    padding-bottom:16px;
+
+    margin-bottom:32px;
+
+}
+
+.section-title h2{
+
+    margin:0;
+
+}
+
+.section-title a{
+
+    font-size:12px;
+
+    color:var(--text-light);
+
+}
+
+.section-title a:hover{
+
+    color:var(--text);
+
+}
+
+
+
+/* ================= SPACING ================= */
+
+section{
+
+    margin-bottom:90px;
+
+}
+/* ===========================================================
+   PART 2
+   PORTFOLIO / PROJECTS / GALLERY
+=========================================================== */
+
+
+
+/* =========================
+   SELECTED WORKS
+========================= */
+
+.selected-works{
+
+    margin-bottom:100px;
+
+}
+
+.works-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+}
+
+.work-card{
+
+    position:relative;
+
+    display:block;
+
+    overflow:hidden;
+
+    background:#ece5de;
+
+    border:1px solid rgba(123,85,66,.08);
+
+}
+
+.work-card img{
+
+    width:100%;
+
+    aspect-ratio:16/10;
+
+    object-fit:cover;
+
+    transition:.35s ease;
+
+}
+
+.work-card:hover img{
+
+    transform:scale(1.015);
+
+}
+
+
+
+/* =========================
+   HOVER
+========================= */
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(247,242,236,.82);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    transition:.25s ease;
+
+}
+
+.work-card:hover .overlay{
+
+    opacity:1;
+
+}
+
+.overlay h3{
+
+    font-size:15px;
+
+    font-weight:500;
+
+    color:var(--text);
+
+    margin-bottom:6px;
+
+    letter-spacing:.02em;
+
+}
+
+.overlay span{
+
+    font-size:11px;
+
+    color:var(--text-light);
+
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+
+}
+
+
+
+/* =========================
+   PORTFOLIO PAGE
+========================= */
+
+.portfolio{
+
+    padding-top:20px;
+
+}
+
+.portfolio-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+
+
+/* =========================
+   PROJECT
+========================= */
+
+.project{
+
+    padding-top:20px;
+
+}
+
+.project-header{
+
+    max-width:560px;
+
+    margin:0 auto 34px;
+
+}
+
+.project-text{
+
+    max-width:560px;
+
+    margin:0 auto 60px;
+
+}
+
+.project-title{
+
+    font-size:24px;
+
+    font-weight:500;
+
+    margin-bottom:8px;
+
+}
+
+.project-year{
+
+    font-size:12px;
+
+    color:var(--text-light);
+
+    margin-bottom:24px;
+
+}
+
+.project-description{
+
+    color:var(--text-light);
+
+}
+
+
+
+/* =========================
+   COVER IMAGE
+========================= */
+
+.project-cover{
+
+    max-width:860px;
+
+    margin:0 auto 50px;
+
+}
+
+.project-cover img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:14px;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    aspect-ratio:4/3;
+
+    object-fit:cover;
+
+    cursor:pointer;
+
+    transition:.2s ease;
+
+}
+
+.gallery img:hover{
+
+    opacity:.78;
+
+}
+
+
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+.lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(255,252,248,.96);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.25s ease;
+
+    z-index:999;
+
+}
+
+.lightbox.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.lightbox img{
+
+    max-width:90vw;
+
+    max-height:90vh;
+
+    object-fit:contain;
+
+}
+
+.lightbox-close{
+
+    position:absolute;
+
+    top:28px;
+
+    right:34px;
+
+    font-size:26px;
+
+    font-weight:300;
+
+    color:var(--text);
+
+    cursor:pointer;
+
+}
+
+.lightbox-prev,
+
+.lightbox-next{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    color:var(--text);
+
+    font-size:22px;
+
+    user-select:none;
+
+}
+
+.lightbox-prev{
+
+    left:24px;
+
+}
+
+.lightbox-next{
+
+    right:24px;
+
+}
+/* ===========================================================
+   PART 3
+   CONTACT / CV / FOOTER / RESPONSIVE
+=========================================================== */
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+
+    border-top:1px solid var(--line);
+
+    padding:40px 0 30px;
+
+}
+
+.contact .container{
+
+    max-width:860px;
+
+}
+
+.contact h2{
+
+    margin-bottom:28px;
+
+    text-align:left;
+
+}
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+    align-items:start;
+
+}
+
+.contact-grid > div{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.contact h3{
+
+    font-size:11px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+    margin-bottom:8px;
+
+    color:var(--text);
+
+}
+
+.contact a{
+
+    display:block;
+
+    color:var(--text-light);
+
+    font-size:13px;
+
+    line-height:1.45;
+
+}
+
+.contact a:hover{
+
+    color:var(--text);
+
+}
+
+.contact-note{
+
+    margin-top:4px;
+
+    font-size:11px;
+
+    line-height:1.45;
+
+    color:var(--text-light);
+
+    max-width:180px;
+
+}
+
+/* =========================
+   CV
+========================= */
+
+.cv{
+
+    padding-top:20px;
+
+}
+
+.cv .container{
+
+    max-width:560px;
+
+}
+
+.cv h1{
+
+    margin-bottom:42px;
+
+}
+
+.cv h2{
+
+    margin-top:58px;
+
+    margin-bottom:18px;
+
+}
+
+.cv p{
+
+    margin-bottom:18px;
+
+}
+
+.cv ul{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.cv li{
+
+    padding:11px 0;
+
+    border-bottom:1px solid rgba(123,85,66,.08);
+
+    color:var(--text-light);
+
+}
+
+.cv strong{
+
+    color:var(--text);
+
+    font-weight:600;
+
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    margin-top:90px;
+
+    border-top:1px solid var(--line);
+
+}
+
+.footer-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:26px 0;
+
+}
+
+.footer-container p{
+
+    margin:0;
+
+    font-size:12px;
+
+    color:var(--text-light);
+
+}
+
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+.hero,
+
+.selected-works,
+
+.portfolio,
+
+.project,
+
+.cv,
+
+.contact{
+
+    animation:fade .35s ease;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(8px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+
+
+
+/* =========================
+   FORM ELEMENTS
+========================= */
+
+input,
+
+textarea,
+
+button{
+
+    font:inherit;
+
+}
+
+button{
+
+    cursor:pointer;
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:900px){
+
+.container{
+
+    width:92%;
+
+}
+
+
+
+/* ---------- header ---------- */
+
+.site-header{
+
+    position:relative;
+
+}
+
+.header-container{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    justify-content:center;
+
+    height:auto;
+
+    padding:24px 0;
+
+    gap:18px;
+
+}
+
+.navigation{
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+/* ---------- intro ---------- */
+
+.hero{
+
+    padding:55px 0;
+
+}
+
+.hero-content{
+
+    max-width:100%;
+
+}
+
+
+
+/* ---------- works ---------- */
+
+.works-grid{
+
+    grid-template-columns:1fr;
+
+    gap:16px;
+
+}
+
+.portfolio-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+/* ---------- gallery ---------- */
+
+.gallery{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+/* ---------- contact ---------- */
+
+.contact-grid{
+
+    grid-template-columns:1fr;
+
+    gap:34px;
+
+}
+
+
+
+/* ---------- typography ---------- */
+
+h1{
+
+    font-size:24px;
+
+}
+
+h2{
+
+    font-size:16px;
+
+}
+
+body{
+
+    font-size:13px;
+
+}
+
+}
+
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width:600px){
+
+.container{
+
+    width:90%;
+
+}
+
+.navigation{
+
+    gap:14px;
+
+}
+
+.navigation a{
+
+    font-size:12px;
+
+}
+
+.logo{
+
+    font-size:12px;
+
+}
+
+.hero{
+
+    padding:42px 0;
+
+}
+
+h1{
+
+    font-size:22px;
+
+    margin-bottom:24px;
+
+}
+
+.gallery{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-container{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:8px;
+
+}
+
+}
+
+
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#efe7df;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#b58d76;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#a17860;
+
+}
+
+.contact-note{
+
+    margin-top:8px;
+
+    margin-bottom:0;
+
+    font-size:12px;
+
+    line-height:1.6;
+
+    color:var(--text-light);
+
+}
+/* ===========================================================
+   PORTFOLIO
+=========================================================== */
+
+.portfolio{
+
+    padding:60px 0 40px;
+
+}
+
+.portfolio h1{
+
+    margin-bottom:40px;
+
+}
+
+.portfolio-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+}
+
+
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.work-card{
+
+    position:relative;
+
+    display:block;
+
+    overflow:hidden;
+
+    background:#efe8e1;
+
+    border:1px solid rgba(123,85,66,.08);
+
+    transition:.25s ease;
+
+}
+
+.work-card img{
+
+    display:block;
+
+    width:100%;
+
+    aspect-ratio:16/10;
+
+    object-fit:cover;
+
+    transition:.35s ease;
+
+}
+
+.work-card:hover img{
+
+    transform:scale(1.02);
+
+}
+
+
+
+/* =========================
+   OVERLAY
+========================= */
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(247,242,236,.90);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    opacity:0;
+
+    transition:.25s ease;
+
+}
+
+.work-card:hover .overlay{
+
+    opacity:1;
+
+}
+
+
+
+/* =========================
+   TITLE
+========================= */
+
+.overlay h3{
+
+    margin:0;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    line-height:1.35;
+
+    color:var(--text);
+
+}
+
+
+
+/* =========================
+   TYPE
+========================= */
+
+.project-type{
+
+    margin:6px 0;
+
+    font-size:11px;
+
+    font-style:italic;
+
+    color:var(--text-light);
+
+}
+
+
+
+/* =========================
+   YEAR
+========================= */
+
+.overlay span{
+
+    margin-top:4px;
+
+    font-size:11px;
+
+    letter-spacing:.10em;
+
+    text-transform:uppercase;
+
+    color:var(--text-light);
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:900px){
+
+.portfolio-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:16px;
+
+}
+
+}
+
+
+
+@media (max-width:600px){
+
+.portfolio{
+
+    padding:40px 0;
+
+}
+
+.portfolio-grid{
+
+    grid-template-columns:1fr;
+
+    gap:14px;
+
+}
+
+.overlay{
+
+    opacity:1;
+
+    background:rgba(247,242,236,.78);
+
+}
+
+.overlay h3{
+
+    font-size:14px;
+
+}
+
+}
+.gallery-item{
+
+display:block;
+
+overflow:hidden;
+
+}
+
+.gallery-item img{
+
+display:block;
+
+width:100%;
+
+aspect-ratio:16/10;
+
+object-fit:cover;
+
+transition:.3s;
+
+}
+
+.gallery-item:hover img{
+
+transform:scale(1.02);
+
+}
+
+/* ===========================================================
+   PROJECT PAGE
+=========================================================== */
+
+.project-page{
+
+    padding:60px 0 80px;
+
+}
+
+.project-page .container{
+
+    max-width:860px;
+
+}
+
+
+
+/* ---------- Cover ---------- */
+
+.project-cover{
+
+    width:100%;
+
+    display:block;
+
+    margin-bottom:42px;
+
+}
+
+
+
+/* ---------- Header ---------- */
+
+.project-header{
+
+    margin-bottom:34px;
+
+}
+
+.project-header h1{
+
+    margin-bottom:8px;
+
+}
+
+.project-year{
+
+    margin:0;
+
+    font-size:12px;
+
+    color:var(--text-light);
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+}
+
+
+
+/* ---------- Text ---------- */
+
+.project-text{
+
+    max-width:560px;
+
+    margin-bottom:60px;
+
+}
+
+.project-text p{
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* ---------- Gallery ---------- */
+
+.project-gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.gallery-item{
+
+    display:block;
+
+    overflow:hidden;
+
+}
+.gallery-item img{
+
+    width:100%;
+
+    aspect-ratio:2.6/1;
+
+    object-fit:cover;
+
+}
+.gallery-item img{
+
+    width:100%;
+
+    aspect-ratio:2.6/1;
+
+    object-fit:cover;
+
+    transition:.25s ease;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.02);
+
+}
+
+
+
+/* ---------- GLightbox ---------- */
+
+.glightbox-clean .gslide-description{
+
+    display:none;
+
+}
+
+.glightbox-clean .gclose{
+
+    color:white;
+
+}
+
+.glightbox-clean .gnext,
+
+.glightbox-clean .gprev{
+
+    color:white;
+
+}
+
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:900px){
+
+.project-page{
+
+    padding:45px 0 60px;
+
+}
+
+.project-gallery{
+
+    gap:14px;
+
+}
+
+}
+
+
+
+@media (max-width:700px){
+
+.project-gallery{
+
+    grid-template-columns:1fr;
+
+}
+
+.project-cover{
+
+    margin-bottom:28px;
+
+}
+
+.project-header{
+
+    margin-bottom:24px;
+
+}
+
+.project-text{
+
+    margin-bottom:40px;
+
+}
+
+}
