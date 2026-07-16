@@ -1688,18 +1688,21 @@ transform:scale(1.02);
 
     object-fit:contain;
 
+
+
 }
 
 .project-cover{
 
-    max-width:760px;
-
-    margin:0 auto 56px;
+    width:100%;
+    max-width:760px;  
+    margin:0 auto 60px;
 
 }
 
 .project-cover img{
 
+    display:block;
     width:100%;
     height:auto;
 
