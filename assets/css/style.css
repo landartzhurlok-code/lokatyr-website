@@ -1689,13 +1689,11 @@ transform:scale(1.02);
     object-fit:contain;
 
 
-
-}
+/* ---------- Project cover ---------- */
 
 .project-cover{
 
-    width:100%;
-    max-width:760px;  
+    max-width:760px;
     margin:0 auto 60px;
 
 }
