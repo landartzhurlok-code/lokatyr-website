@@ -1744,3 +1744,18 @@ transform:scale(1.02);
     height:auto;
 
 }
+
+
+.project-gallery-vertical .gallery-item img{
+
+    display:block;
+
+    width:100%;
+
+    max-width:620px;
+
+    height:auto;
+
+    margin:0 auto;
+
+}
