@@ -1710,3 +1710,37 @@ transform:scale(1.02);
     height:auto;
 
 }
+
+.project-gallery-vertical{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:28px;
+
+}
+
+.project-gallery-vertical .gallery-item{
+
+    display:block;
+
+    width:auto;
+
+    max-width:760px;
+
+}
+
+.project-gallery-vertical .gallery-item img{
+
+    display:block;
+
+    max-width:100%;
+
+    width:auto;
+
+    height:auto;
+
+}
