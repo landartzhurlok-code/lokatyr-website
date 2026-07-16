@@ -1655,7 +1655,6 @@ transform:scale(1.02);
 }
 
 }
-
 /* ==========================================
    Vertical gallery (only for selected projects)
 ========================================== */
@@ -1688,12 +1687,18 @@ transform:scale(1.02);
 
     object-fit:contain;
 
+    aspect-ratio:auto;
 
-/* ---------- Project cover ---------- */
+}
+
+/* ==========================================
+   Project cover
+========================================== */
 
 .project-cover{
 
     max-width:760px;
+
     margin:0 auto 60px;
 
 }
@@ -1701,7 +1706,9 @@ transform:scale(1.02);
 .project-cover img{
 
     display:block;
+
     width:100%;
+
     height:auto;
 
 }
