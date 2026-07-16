@@ -1655,17 +1655,15 @@ transform:scale(1.02);
 }
 
 }
-/* ==========================================
-   Vertical gallery (only for selected projects)
-========================================== */
-
 .project-gallery-vertical{
 
     display:flex;
 
     flex-direction:column;
 
-    gap:24px;
+    align-items:center;
+
+    gap:28px;
 
 }
 
@@ -1673,7 +1671,9 @@ transform:scale(1.02);
 
     display:block;
 
-    width:100%;
+    width:auto;
+
+    max-width:760px;
 
 }
 
@@ -1681,13 +1681,11 @@ transform:scale(1.02);
 
     display:block;
 
-    width:100%;
+    max-width:100%;
+
+    width:auto;
 
     height:auto;
-
-    object-fit:contain;
-
-    aspect-ratio:auto;
 
 }
 
