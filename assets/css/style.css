@@ -1053,37 +1053,68 @@ blockquote{
 
 }
 
-/* ===== TEST ===== */
+/* =========================
+   PROJECT COVER
+========================= */
 
 .project-cover{
 
-    max-width:620px !important;
-    margin:0 auto 60px !important;
-
-    border:6px solid red !important;
+    max-width:620px;
+    margin:0 auto 60px;
 
 }
 
 .project-cover img{
 
-    display:block !important;
-    width:100% !important;
-    height:auto !important;
+    display:block;
+    width:100%;
+    height:auto;
 
 }
 
-.project-gallery-vertical{
 
-    max-width:620px !important;
-    margin:0 auto !important;
+/* =========================
+   UNIVERSAL PROJECT GALLERY
+========================= */
+
+.project-gallery{
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
 
 }
 
-.project-gallery-vertical .gallery-item img{
+.gallery-item{
 
-    width:100% !important;
-    height:auto !important;
-    aspect-ratio:auto !important;
-    object-fit:contain !important;
+    width:180px;
+    height:180px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:var(--surface);
+
+}
+
+.gallery-item img{
+
+    max-width:100%;
+    max-height:100%;
+
+    width:auto;
+    height:auto;
+
+    object-fit:contain;
+
+    transition:.25s ease;
+
+}
+
+.gallery-item:hover img{
+
+    opacity:.9;
 
 }
