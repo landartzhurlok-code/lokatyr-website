@@ -1052,3 +1052,38 @@ blockquote{
     background:rgba(15,15,15,.95) !important;
 
 }
+
+/* ===== TEST ===== */
+
+.project-cover{
+
+    max-width:620px !important;
+    margin:0 auto 60px !important;
+
+    border:6px solid red !important;
+
+}
+
+.project-cover img{
+
+    display:block !important;
+    width:100% !important;
+    height:auto !important;
+
+}
+
+.project-gallery-vertical{
+
+    max-width:620px !important;
+    margin:0 auto !important;
+
+}
+
+.project-gallery-vertical .gallery-item img{
+
+    width:100% !important;
+    height:auto !important;
+    aspect-ratio:auto !important;
+    object-fit:contain !important;
+
+}
